@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_08_26_190659) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "clients", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -24,7 +27,7 @@ ActiveRecord::Schema.define(version: 2020_08_26_190659) do
     t.string "name"
     t.string "email"
     t.string "phone"
-    t.integer "client_id", null: false
+    t.bigint "client_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["client_id"], name: "index_contacts_on_client_id"
