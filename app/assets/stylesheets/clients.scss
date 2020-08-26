@@ -1,0 +1,52 @@
+// Place all the styles related to the clients controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$primary-color: lightcoral;
+$second-color: #000000;
+
+
+body {  
+    text-align: center;
+    color: $primary-color;
+}
+nav{
+    margin-bottom: 10px;
+}
+h1{
+    margin-bottom: 25px;
+}
+.header-img{    
+    background-image: url('bg-clients.jpg');
+    opacity: 0.6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+th{
+    text-align: center;
+    padding-right: 15px;
+}
+td{
+    color: $second-color;
+}
+.client-name{
+    font-weight: bold;
+}
+.btn{
+    color: #ffffff !important;
+}
+a:visited, a {
+    color: $second-color;
+}
+a:hover{
+    color: $primary-color;
+    background-color: #f8f8f8;
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+footer{
+    margin-top: 50px;
+}
