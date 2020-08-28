@@ -1,24 +1,28 @@
 # README
+## Descrição
+Plataforma desenvolvida como parte do teste.
+Inlcui:
+- CRUD de clientes
+- CRUD de contatos
+- Tela para relatório (mostrando clientes e seus contatos)
+- Relacionamento entre os dois e testes
+- Autenticação usando devise
+- Testes unitários usando minitest
+- Layout que eu mesma fiz usando bootstrap, algo prático e explicativo
+- Deploy no Heroku
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Implementação em ambiente local
+- Depois de clonar o repositório
+- Instalar a versão do ruby 2.7.1 (como especificado no gemfile)
+- Instalar a gem Bundler `gem install bundler`
+- Instalar o postgres localmente (definir o password do usuário postgres como `000000` ou atualizar o `database.yml`)
+- Instalar as dependências com `bundle install`
+- Criar banco de dados `rake db:create`
+- Rodar as migrations `rake db:migrate`
+- Iniciar o servidor local `rails s`
+- Acessar o seu `localhost:3000`
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# "Produção"
+Colocado no ar no Heroku:
+[Link do github](https://github.com/Biancamazzi/teste-customerx)
+[Link do heroku](https://test-customerx.herokuapp.com/)
