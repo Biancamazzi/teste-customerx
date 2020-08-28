@@ -24,5 +24,5 @@ Inlcui:
 
 # "Produção"
 Colocado no ar no Heroku:
-[Link do github](https://github.com/Biancamazzi/teste-customerx)
-[Link do heroku](https://test-customerx.herokuapp.com/)
+- [Link do github](https://github.com/Biancamazzi/teste-customerx)
+- [Link do heroku](https://test-customerx.herokuapp.com/)
