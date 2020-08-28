@@ -8,6 +8,10 @@ class ClientsController < ApplicationController
     @clients = Client.all
   end
 
+  def report
+    @clients = Client.all
+  end
+
   # GET /clients/1
   # GET /clients/1.json
   def show

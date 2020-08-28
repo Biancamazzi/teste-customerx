@@ -5,3 +5,4 @@ class ContactTest < ActiveSupport::TestCase
   #   assert true
   # end
 end
+
