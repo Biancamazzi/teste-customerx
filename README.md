@@ -1,25 +1,28 @@
-# DOCUMENTAÇÃO DO TESTE
-
-# Descrição
-Realização do teste em Ruby, utilizando Rails.
-#
-Criei uma tela de cadastro para clientes e contatos.
-#
-Segui conforme aconselhado deixando com que um cliente tenha vários contatos.
-#
-O CRUD foi realizado com suas operações básicas de criar, editar, visualizar e excluir.
-#
-O relatório foi disponibilizado na tela mostrando o clientes e seus contatos.
-#
-As telas foram pensadas para ser algo prático e auto explicativo.
-#
-Implementei também o login de acesso.
-#
-E realizei alguns testes.
+# README
+## Descrição
+Plataforma desenvolvida como parte do teste.
+Inlcui:
+- CRUD de clientes
+- CRUD de contatos
+- Tela para relatório (mostrando clientes e seus contatos)
+- Relacionamento entre os dois e testes
+- Autenticação usando devise
+- Testes unitários usando minitest
+- Layout que eu mesma fiz usando bootstrap, algo prático e explicativo
+- Deploy no Heroku
 
 # Implementação em ambiente local
-0 projeto foi realizado no Github e colocado no ar no Heroku.
-#
-Link do github:https://github.com/Biancamazzi/teste-customerx
-#
-Link do heroku:https://test-customerx.herokuapp.com/
+- Depois de clonar o repositório
+- Instalar a versão do ruby 2.7.1 (como especificado no gemfile)
+- Instalar a gem Bundler `gem install bundler`
+- Instalar o postgres localmente (definir o password do usuário postgres como `000000` ou atualizar o `database.yml`)
+- Instalar as dependências com `bundle install`
+- Criar banco de dados `rake db:create`
+- Rodar as migrations `rake db:migrate`
+- Iniciar o servidor local `rails s`
+- Acessar o seu `localhost:3000`
+
+# "Produção"
+Colocado no ar no Heroku:
+[Link do github](https://github.com/Biancamazzi/teste-customerx)
+[Link do heroku](https://test-customerx.herokuapp.com/)
