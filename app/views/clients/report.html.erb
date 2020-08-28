@@ -1,15 +1,17 @@
 <p id="notice"><%= notice %></p>
 
+<div class="header-table">
+<h1>Relatório</h1>
 
-<h1>Clientes</h1>
-
-<table class="table table-striped">
+<table class="table">
   <thead>
     <tr>
       <th>Nome</th>
       <th>Email</th>
       <th>Telefone</th>
       <th>Contatos</th>
+      <th>Contatos Email</th>
+      <th>Contatos Telefone</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -23,12 +25,21 @@
         <%= link_to contact.name, contact %><br>
       <% end %>
       </td>
+      <td><% client.contacts.each do |contact| %>    
+        <%= link_to contact.email, contact %><br>
+      <% end %>
+      </td>
+      <td><% client.contacts.each do |contact| %>    
+        <%= link_to contact.phone, contact %><br>
+      <% end %>
+      </td>
 
 
     </tr>
   <% end %>
   </tbody>
 </table>
+</div>
 
 
 <br>

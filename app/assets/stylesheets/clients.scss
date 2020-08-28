@@ -1,51 +1,89 @@
 // Place all the styles related to the clients controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-$primary-color: lightcoral;
-$second-color: #000000;
+$primary-color: #542d68;
 
 
 body {  
-    text-align: center;
     color: $primary-color;
+    margin: 0;
+    background-color: #f7f7f7;
+    text-align: center;
+    widows: 100%;
 }
+
 nav{
+    background-color: $primary-color;
     margin-bottom: 10px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    a:visited , a{
+        color: #873f97;
+        background-color: #ffffff;
+        border-radius: 6px;
+        margin-right: 20px;
+    }
+}
+.apresentation{
+    text-align: left;
+    margin: 20px;
+    font-size: 16px;
+    text-decoration: underline;
 }
 h1{
-    margin-bottom: 25px;
+    text-align: left;
+    font-size: 25px;
+    padding: 28px;
 }
-.header-img{    
-    background-image: url('bg-clients.jpg');
-    opacity: 0.6;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 200px;
+.header-table{
+    margin: 30px;
+    background-color: #f4f4f4;
+    box-shadow: 1px 1px 3px 2px #ebebeb;
+    padding: 25px;
 }
+.table{
+    border-color:#f4f4f4 ; 
+}
+.btn-secondary, btn-danger{
+    opacity: 0.5;
+}
+a:visited, a{
+    color: #1f1f1f;
+}
+
 th{
-    text-align: center;
     padding-right: 15px;
+    border: none;
 }
 td{
-    color: $second-color;
+    font-weight: normal;
 }
+
 .client-name{
     font-weight: bold;
 }
 .btn{
     color: #ffffff !important;
 }
-a:visited, a {
-    color: $second-color;
-}
+
 a:hover{
-    color: $primary-color;
+    color: #873f97;
     background-color: #f8f8f8;
     background-size: cover;
     cursor: pointer;
 }
 footer{
-    margin-top: 50px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.footer-copyright{
+    background-color: #f4f4f4;
+    color: #898989;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
