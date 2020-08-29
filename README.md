@@ -26,3 +26,4 @@ Inclui:
 Colocado no ar no Heroku:
 - [Link do github](https://github.com/Biancamazzi/teste-customerx)
 - [Link do heroku](https://test-customerx.herokuapp.com/)
+Para acessar o Heroku, basta fazer o cadastro na pagina inicial, logar e entrar no ambiente.
