@@ -22,7 +22,7 @@ Inlcui:
 - Iniciar o servidor local `rails s`
 - Acessar o seu `localhost:3000`
 
-# "Produção"
+# Produção
 Colocado no ar no Heroku:
 - [Link do github](https://github.com/Biancamazzi/teste-customerx)
 - [Link do heroku](https://test-customerx.herokuapp.com/)
