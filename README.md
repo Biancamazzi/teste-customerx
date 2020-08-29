@@ -1,7 +1,7 @@
 # README
 ## Descrição
 Plataforma desenvolvida como parte do teste.
-Inlcui:
+Inclui:
 - CRUD de clientes
 - CRUD de contatos
 - Tela para relatório (mostrando clientes e seus contatos)
