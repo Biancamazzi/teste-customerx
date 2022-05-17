@@ -4,7 +4,7 @@
 $primary-color: #542d68;
 
 
-body {  
+body {
     color: $primary-color;
     margin: 0;
     background-color: #f7f7f7;
@@ -22,9 +22,27 @@ nav{
     a:visited , a{
         color: #873f97;
         background-color: #ffffff;
-        border-radius: 6px;
+        border-radius: 26px;
         margin-right: 20px;
     }
+}
+input {
+  all: unset;
+  background: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: black;
+  font-weight: 100;
+  padding: 5px;
+
+}
+
+select{
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
 }
 .apresentation{
     text-align: left;
@@ -37,6 +55,11 @@ h1{
     font-size: 25px;
     padding: 28px;
 }
+.actions input{
+  background: #542d68;
+  color: white;
+  padding: 11px;
+}
 .header-table{
     margin: 30px;
     background-color: #f4f4f4;
@@ -44,7 +67,7 @@ h1{
     padding: 25px;
 }
 .table{
-    border-color:#f4f4f4 ; 
+    border-color:#f4f4f4 ;
 }
 .btn-secondary, btn-danger{
     opacity: 0.5;
@@ -86,4 +109,24 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.client-data{
+  margin-top: 50px;
+  background-color: #ffff;
+  height: 100%;
+  padding: 17px;
+}
+.client-name, .client-email, .client-phone{
+  margin-bottom: 15px;
+}
+.contact-client{
+  display: flex;
+  justify-content: center;
+}
+.contact-client p{
+  margin-right: 7px;
+}
+
+.footer-client{
+  margin-top: 30px;
 }

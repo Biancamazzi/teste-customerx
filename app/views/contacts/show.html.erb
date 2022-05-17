@@ -1,24 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @contact.name %>
-</p>
+<div class="contact-data">
+  <div class="contact-name">
+    <strong>Name:</strong>
+    <%= @contact.name %>
+  </div>
+  <div class="contact-email">
+    <strong>Email:</strong>
+    <%= @contact.email %>
+  </div>
+  <div class="contact-phone">
+    <strong>Phone:</strong>
+    <%= @contact.phone %>
+  </div>
+  <div>
+    <strong>Client:</strong>
+    <%= link_to @contact.client.name, @contact.client %>
+  </div>
+</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @contact.email %>
-</p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @contact.phone %>
-</p>
 
-<p>
-  <strong>Client:</strong>
-  <%= @contact.client.name %>
-</p>
 
-<%= link_to 'Edit', edit_contact_path(@contact) %> |
-<%= link_to 'Back', contacts_path %>
+<div class="footer-contact">
+  <%= link_to 'Edit', edit_contact_path(@contact) %> |
+  <%= link_to 'Back', contacts_path %>
+</div>

@@ -13,7 +13,6 @@ class ClientsController < ApplicationController
   end
 
   # GET /clients/1
-  # GET /clients/1.json
   def show
   end
 

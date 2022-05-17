@@ -1,25 +1,32 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @client.name %>
-</p>
+<div class="client-data">
+  <div class="client-name">
+    <strong>Name:</strong>
+    <%= @client.name %>
+  </div>
+  <div class="client-email">
+    <strong>Email:</strong>
+    <%= @client.email %>
+  </div>
+  <div class="client-phone">
+    <strong>Phone:</strong>
+    <%= @client.phone %>
+  </div>
+  <div class="contact-client">
+    <p>Contacts:</p>
+    <div>
+      <% @client.contacts.each do |contact| %>
+        <%= link_to contact.name, contact %><br>
+      <% end %>
+      <br />
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @client.email %>
-</p>
 
-<p>
-  <strong>Phone:</strong>
-  <%= @client.phone %>
-</p>
-<p>
-<h4>Contacts </h4>
-  <% @client.contacts.each do |contact| %>    
-    <%= link_to contact.name, contact %><br>
-  <% end %>
-</p>
 
-<%= link_to 'Edit', edit_client_path(@client) %> |
-<%= link_to 'Back', clients_path %>
+<div class="footer-client">
+  <%= link_to 'Edit', edit_client_path(@client) %> |
+  <%= link_to 'Back', clients_path %>
+</div>
